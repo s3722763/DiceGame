@@ -36,11 +36,21 @@ public class GameEngineCallbackImpl implements GameEngineCallback
    }
 
    @Override
+   public void houseDieUpdate(Die die, GameEngine gameEngine) {
+
+   }
+
+   @Override
    public void playerResult(Player player, DicePair result, GameEngine gameEngine)
    {
       // final results logged at Level.INFO
       logger.log(Level.INFO, "Result data to log .. String.format() is good here!");
       // TODO: complete this method to log results
+   }
+
+   @Override
+   public void houseResult(DicePair result, GameEngine gameEngine) {
+
    }
 
    // TODO implement rest of interface
