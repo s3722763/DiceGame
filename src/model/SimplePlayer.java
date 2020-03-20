@@ -77,6 +77,6 @@ public class SimplePlayer implements Player {
     @Override
     public String toString() {
         return String.format("Player: id=%d, name=%s, bet=%d, points=%d, RESULT .. Dice 1: %s, Dice 2: %s .. Total: %d",
-                this.playerId, this.playerName, this.points, this.rollResult.getDie1().toString(), this.rollResult.getDie2().toString(), this.rollResult.getDie1().getNumber() + this.rollResult.getDie2().getNumber());
+                this.playerId, this.playerName, this.points, this.rollResult.getDie1().toString(), this.rollResult.getDie2().toString(), this.rollResult.getTotal());
     }
 }
